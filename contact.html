@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="backgroung_styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="contactstyle.css">
+    <title>Contact Me</title>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="brand-title">WEATHER FORECAST</div>
+     <a href="#" class="toggle-button">
+       <span class="bar"></span>
+       <span class="bar"></span>
+       <span class="bar"></span>
+     </a>
+    <div class="navbar-links">
+      <ul>
+         <li><a href="index.html">Home</a></li>
+         <li><a href="search.html">Search City</a></li>
+            <li><a href="gallery.html">Activity</a></li>
+            <li><a href="contact.html">Contact</a></li>
+       </ul>
+      </div>
+  </nav>
+
+
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+    <h1 class="heading"> contact <span> me </span> </h1>
+
+    <div class="icons-container">
+
+        <div class="icons">
+            <i class="fas fa-envelope"></i>
+            <h3>My Email</h3>
+            <p>priya@gmail.com</p>
+            <p>priyart@gmail.com</p>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-phone"></i>
+            <h3>My Number</h3>
+            <p>+123-456-7890</p>
+            <p>+111-222-3333</p>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>My Address</h3>
+            <p>Prayagraj, Uttar Pradesh-211000></p>
+        </div>
+        <div class="icons">
+            <i class="fab fa-facebook-f" onclick="window.location.href='https://www.facebook.com/';"></i>
+            <i class="fab fa-instagram"  onclick="window.location.href='https://www.instagram.com/';"></i>
+            <i class="fab fa-linkedin"  onclick="window.location.href='https://www.linkedin.com/';"></i>
+            <h3>connect with me</h3>
+           
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <form action="mail.php" method="POST">
+
+            <input type="text" name="name" placeholder="Your Name" class="box" required>
+            <input type="email" name="emailaddress" placeholder=" Your Email Address" class="box" required>
+            <input type="tel" maxlength="10" name="mobile" placeholder="Mobile number" class="box" pattern="[1-9]{1}[0-9]{9}" required>
+            <textarea type="text" rows="4" name="message" placeholder=" Your Message" required></textarea >
+            <button type="submit">Send</button>
+
+        </form>
+          <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d938030.9625346499!2d80.70726844103626!3d26.592510351799167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd991f32b16b%3A0x93ccba8909978be7!2sLucknow%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1696603468642!5m2!1sen!2sin" width="600" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    
+
+</section>
+
+<!-- contact section ends -->
+
+    <!-- custom js file link  -->
+<script src="contactscript.js"></script>
+
+
+</body>
+</html>
+ 
+<style>
+
+    *{
+        box-sizing: border-box;
+        padding: 0;  
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .navbar {
+        font-family: Raleway;
+        padding: 5px;
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #f9f6f6;
+        color: rgb(17, 2, 2);
+    }
+    
+    .brand-title {
+        font-size: 2rem;
+        font-weight: 700;
+        margin: .5rem;
+    }
+    
+    .navbar-links {
+        height: 100%;
+        font-family: Raleway;
+        font-size: 1.9rem;
+    }
+    
+    .navbar-links ul {
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .navbar-links li {
+        list-style: none;
+        text-align: -webkit-match-parent;
+
+    }
+    
+    .navbar-links li a {
+        font-weight: 800;
+        display: block;
+        text-decoration: none;
+        color: rgb(19, 1, 1);
+        padding:0.5rem;
+        font-size: 1.5rem;
+        margin: .5rem;
+        font-family: Raleway;
+    }
+    
+    .navbar-links li:hover {
+        background-color: #f5d4d4;
+    }
+    
+    .toggle-button {
+        position: absolute;
+        top: .75rem;
+        right: 1rem;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+    }
+    
+    .toggle-button .bar {
+        height: 3px;
+        width: 100%;
+        background-color: rgb(14, 1, 1);
+        border-radius: 10px;
+    }
+    
+    @media (max-width: 800px) {
+        .navbar {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        .toggle-button {
+            display: flex;
+        }
+    
+        .navbar-links {
+            display: none;
+            width: 100%;
+        }
+    
+        .navbar-links ul {
+            width: 100%;
+            flex-direction: column;
+        }
+    
+        .navbar-links ul li {
+            text-align: center;
+        }
+    
+        .navbar-links ul li a {
+            padding: .5rem 1rem;
+            color: rgb(162, 162, 247);
+        }
+    
+        .navbar-links.active {
+            display: flex;
+        }
+    }
+    
+    </style>

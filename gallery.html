@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Activity</title>
+    <link rel="stylesheet" href="backgroung_styles.css">
+    <link rel="stylesheet" href="gallerystyles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+    <nav class="navbar">
+      <div class="brand-title">WEATHER FORECAST</div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="search.html">Search City</a></li>
+            <li><a href="gallery.html">Activity</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+  </nav>
+
+    <div class="hero-section">
+      <div class="row">
+        <div class="container">
+          <img src="images/books.jpg" alt="books" />
+          <div class="middle" onclick="window.location.href='sticky1.html';" style="background-color: #b59183;">
+            <div class="text">How's Going?</div>
+          </div>
+        </div>
+        <div class="container">
+          <img src="images/pencil.jpg" alt="pencils" />
+          <div class="middle" onclick="window.location.href='sticky2.html';" style="background-color: #f45796;">
+            <div class="text">How's Going?</div>
+          </div>
+        </div>
+        <div class="container">
+          <img src="images/plans.jpg" alt="plans" />
+          <div class="middle" onclick="window.location.href='sticky3.html';" style="background-color: #0a5c23;">
+            <div class="text">How's Going?</div>
+          </div>
+        </div>
+        <div class="container">
+          <img src="images/plant.jpg" alt="fluff" />
+          <div class="middle" onclick="window.location.href='sticky4.html';" style="background-color: #babcbf;">
+            <div class="text">How's Going?</div>
+          </div>
+        </div>
+        <div class="container">
+          <img src="images/notes.jpg" alt="notes" />
+          <div class="middle" onclick="window.location.href='sticky5.html';" style="background-color: #eab1ba;">
+            <div class="text">How's Going?</div>
+          </div>
+        </div>
+       
+      </div>
+      <div class="row">
+        <div class="container">
+          <img src="images/pattern.jpg" alt="patterns" />
+          <div class="middle" onclick="window.location.href='sticky6.html';" style="background-color: #a60b32;">
+            <div class="text">How's Going?</div>
+          </div>
+        </div>
+        <div class="container">
+          <img src="images/flower.jpg" alt="flowers" />
+          <div class="middle" onclick="window.location.href='sticky7.html';" style="background-color: #e8b50a;">
+            <div class="text">How's Going?</div>
+          </div>
+        </div>
+        <div class="container">
+          <img src="images/envelops.jpg" alt="envelopes" />
+          <div class="middle" onclick="window.location.href='sticky8.html';" style="background-color: #f09b2d;">
+            <div class="text">How's Going?</div>
+          </div>
+        </div>
+        <div class="container">
+          <img src="images/planner.jpg" alt="planner" />
+          <div class="middle" onclick="window.location.href='sticky9.html';" style="background-color: #e397a3;">
+            <div class="text">How's Going?</div>
+          </div>
+        </div>
+        <div class="container">
+          <img src="images/dandelion.jpg" alt="plant" />
+          <div class="middle" onclick="window.location.href='sticky10.html';" style="background-color: #243f3f;">
+            <div class="text">How's Going?</div>
+          </div>
+        </div>
+       
+        
+      </div>
+    </div>
+    <script src="galleryscript.js"></script>
+  </body>
+</html>
+
+<style>
+
+  .navbar {
+      box-sizing: border-box;
+      position: fixed;
+  }
+  
+  body {
+      margin: 0;
+      padding: 0;
+  }
+  
+  .navbar {
+      display: flex;
+      position: relative;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f9f6f6;
+      color: rgb(17, 2, 2);
+  }
+  
+  .brand-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin: .5rem;
+  }
+  
+  .navbar-links {
+      height: 100%;
+  }
+  
+  .navbar-links ul {
+      display: flex;
+      margin: 0;
+      padding: 0;
+  }
+  
+  .navbar-links li {
+      list-style: none;
+  }
+  
+  .navbar-links li a {
+      font-weight: 800;
+      display: block;
+      text-decoration: none;
+      color: rgb(19, 1, 1);
+      padding:0.5rem;
+  }
+  
+  .navbar-links li:hover {
+      background-color: #f5d4d4;
+  }
+  
+  .toggle-button {
+      position: absolute;
+      top: .75rem;
+      right: 1rem;
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 30px;
+      height: 21px;
+  }
+  
+  .toggle-button .bar {
+      height: 3px;
+      width: 100%;
+      background-color: rgb(14, 1, 1);
+      border-radius: 10px;
+  }
+  
+  @media (max-width: 800px) {
+      .navbar {
+          flex-direction: column;
+          align-items: flex-start;
+      }
+  
+      .toggle-button {
+          display: flex;
+      }
+  
+      .navbar-links {
+          display: none;
+          width: 100%;
+      }
+  
+      .navbar-links ul {
+          width: 100%;
+          flex-direction: column;
+      }
+  
+      .navbar-links ul li {
+          text-align: center;
+      }
+  
+      .navbar-links ul li a {
+          padding: .5rem 1rem;
+          color: rgb(162, 162, 247);
+      }
+  
+      .navbar-links.active {
+          display: flex;
+      }
+  }
+  
+  </style>
